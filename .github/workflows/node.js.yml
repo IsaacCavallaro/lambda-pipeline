@@ -30,4 +30,4 @@ jobs:
         aws-region: ap-southeast-2
     - run: cd app && npm ci
     - run: zip -r publish.zip ./app/*
-    - run: aws lambda update=function-code --function-name=express-ExpressFunction-3vNoF0jhddCC --zip-file=fileb://publish.zip
+    - run: aws lambda update=update-function-code --function-name=express-ExpressFunction-3vNoF0jhddCC --zip-file=fileb://publish.zip
